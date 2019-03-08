@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --secondary-color: rgba(229, 148, 0, 0.9);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --menu-speed: 0.75s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif ;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* Utility Classes */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.l-heading {
+  font-size: 4.5rem;
+  text-align: center;
+  padding-bottom: 0.1rem;
+}
+
+.m-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.s-heading {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0.25rem
+}
+
+.secondary-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0.3rem 0rem;
+}
+
+.secondary-text-1 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0.3rem 0rem 0rem;;
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.p-body {
+  text-align: center;
+}
+
+.p-product {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  align-self: center;
+  border: solid 1px #fff;
+  color: #fff;
+  width: 10rem;
+  padding: 0.4rem 0.8rem;
+  margin: 1rem;
+  transition: opacity 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-dark {
+  display: block;
+  align-self: center;
+  border: solid 1px #999;
+  background: #f4f4f4;
+  color: #333;
+  width: 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  border: solid 1px var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-dark:hover {
+  border: solid 1px #f4f4f4;
+  background: #444;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.inception {
+  padding: 1rem 0rem;
+}
+
+  /* Navbar */
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar h2 a {
+  color: #fff;
+  border: none var(--secondary-color) 1px;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  margin: 0.25rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+#navbar ul li a {
+  padding: 0.4rem 0.6rem;
+  margin: 0.25rem;
+  border: none;
+  color: #fff;
+}
+
+#navbar ul a:hover {
+  
+  color: var(--secondary-color);
+  transition: all 0.5s ease-in;
+}
+
+#navbar ul li a.current {
+  border: solid var(--secondary-color);
+  color: #fff;
+  border-width: 1px;
+}
+
+#navbar .nav-heading { 
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+  /* Showcase */
+
+#showcase {
+  background: url(../images/architecture-buildings-business-325185.jpg) no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 105%;
+  padding: 1rem; 
+  overflow: hidden;
+}
+
+.darken-overlay div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+
+  /* Product Line Page */
+#product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  background: #333;  
+}
+
+#product div {
+  flex: 1;
+  border: solid #333 1px;
+}
+  
+#product .product-text {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 0rem;
+}
+
+.list {
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0.5rem 0;
+  list-style: none;
+}
+  
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: rgba(229, 148, 0, 0.5) dotted 1px;
+}
+
+#product .product-img {
+  background: url(../images/abstract-alloy-aluminum.jpg) no-repeat center center/cover;
+}
+  
+  /* Values Section */
+
+#values {
+  display: flex;
+  margin-top: 0rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem; 
+}
+
+#values .items .item {
+  flex: 1;
+  text-align: center;
+  color: #333;
+  padding: 1rem;
+}
+
+#values .items .item i {
+  background: var(--secondary-color);
+  color: #333;
+  padding: 1.2rem;
+  border-radius: 60%;
+  margin-bottom: 1rem;
+}
+
+#values .items .item p {
+  padding: 1rem;
+}
+
+/* About Section */
+
+#about {
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+  background: #333;
+  color: #f4f4f4;
+  padding: 0rem; 
+}
+
+#about div {
+  flex: 1;
+}
+
+#about .about-img {
+  background: url(../images/handshake_suits.jpg) no-repeat center center/cover;
+  top: 0;
+}
+
+#about p {
+  border-bottom: rgba(229, 148, 0, 0.2) dotted 1px;
+  font-size: 1.2rem;
+  padding: 1rem 0rem;
+  line-height: 2rem;
+}
+
+#about p:last-child {
+  border: none;
+}
+
+/* Section: Contact */
+#contact {
+  display: flex;
+}
+
+#contact .map, #contact .contact-form {
+  flex: 1;
+}
+#contact .contact-form .form-group {
+  margin: 1rem 0rem 1rem 0rem;
+}
+
+#contact .contact-form label {
+  display: block;
+  padding-bottom: 0.3rem;
+}
+
+#contact .contact-form input, 
+#contact .contact-form textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+#contact .contact-form textarea {
+  height: 150px;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>LMW Associates LLC | Material and Service Solutions</title>
+</head>
+<body id="home">
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <h2 class="nav-heading"><a href="index.html">LMW ASSOCIATES, LLC</a></li></h2>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#values">WHO WE ARE</a></li>
+      <li><a href="product_line.html">PRODUCT LINE</a></li>
+      <li><a href="principals.html">PRINCIPALS</a></li>
+      <li><a href="#contact">CONTACT US</a></li>
+    </ul>
+  </nav>
+
+   <!-- Showcase -->
+
+  <header id="showcase" class="darken-overlay">
+    <div id="showcase-content">
+      <!-- <h1 class="l-heading">LMW ASSOCIATES, LLC</h1> -->
+      <h1 class= "l-heading">The Sky Is The Limit</h1>
+      <h4 class="secondary-text">Solving the procurement puzzle one piece at a time</h4>
+      <a href="product_line.html" class="btn">PRODUCT LINE</a>
+    </div>
+  </header>
+
+    <!-- Section: What We Do -->
+    
+  <section id="values" class="bg-light py-1">
+    <div class="container">
+      <h2 class="m-heading text-center">Our Core<span class="text-secondary"> Values</span></h2>
+      <div class="items">
+        <div class="item">
+          <i class="fas fa-balance-scale fa-3x"></i>
+          <div>
+            <h2>Integrity</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="far fa-handshake fa-3x"></i>
+          <div>
+            <h2>Trust</h2>
+            <p>We know the value of trust and base that in everything we do to help grow and establish personal relationships.</p>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-award fa-3x"></i>
+          <div>
+            <h2>Quality Service</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-img"></div> 
+    <div class="p-2">
+      <h2 class="m-heading text-center"><span class="text-secondary">Over 50 Years</span> of Metal Products Sales and Service</h2>
+      <p>LMW Associates have over 50 years of combined experience in the metals industries. Our team has developed a business based on Integrity, Personal Relationships, Quality Service.</p>
+      <p>​We are always searching for and working with the most effective companies in the International Metals Industry.</p>
+      <p>You can be certain that when you chose to partner with  LMW Associates LLC ​you will receive only ​the best in sales and service.</p>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <h2 class="m-heading">Contact Us</h2>
+      <p class="secondary-text">Phone: 303.521.4637</p>
+      <p class="secondary-text">Email: darren@lmwassoc.com</p>
+      <p class="secondary-text-1">or fill out the form below with any questions or comments</p>
+      <form action="process.php" method="POST">
+        <div class="form-group">
+          <label class="secondary-text" for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+          <label class="secondary-text" for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="Enter Email" required>
+        </div>
+        <div class="form-group">
+          <label class="secondary-text" for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" placeholder="Enter Phone Number" required>
+        </div>
+        <div class="form-group">
+          <label class="secondary-text" for="message">Comment</label>
+          <textarea name="message" id="message" placeholder="Enter Comment" required></textarea>
+        </div>
+          <input type="submit" value="Send" class="btn-dark">
+          <p class="inception">MAD Acres, LLC dba LMW Associates, LLC 2017</p>
+      </form>
+    </div>
+    <div class="map"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright  &copy; 2019 LMW Associates, LLC - All Rights Reserved</p>
+    </div>
+  </footer>
+
+
+<!-- JQurey CDN  -->
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<!-- Google Maps JS link -->
+<script src="./js/main.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjMZ7BO9nLFLYmu9FsoEJO4kXaViVyvyY&callback=initMap"
+  async defer></script>
+
+</body>
+</html>
